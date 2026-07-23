@@ -240,9 +240,34 @@ h3 { font-size: 1.15rem; }
 .role-card h3 { font-size: 1rem; margin-bottom: .5rem; }
 .role-card p { color: var(--text-muted); font-size: .88rem; margin: 0; }
 
-/* ===== Phases / etapas ===== */
-.phase { margin-top: 3rem; }
-.phase:first-of-type { margin-top: 2.5rem; }
+/* ===== Stage blocks (Etapa 1 / Etapa 2) ===== */
+.stage-block { margin-top: 3rem; }
+.stage-block:first-of-type { margin-top: 2.5rem; }
+.stage-block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border-strong);
+}
+.stage-block-head h3 { margin: 0; font-size: 1.35rem; }
+.stage-price {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.stage-price .iva-tag { font-family: var(--font-mono); }
+.scope-list { margin-bottom: 1rem; }
+.stage-note { font-size: .85rem; margin-top: 1rem; }
+
+/* ===== Phases within a stage ===== */
+.phase { margin-top: 2.25rem; }
+.phase:first-of-type { margin-top: 2rem; }
 .phase-head {
   display: flex;
   align-items: baseline;
@@ -253,7 +278,7 @@ h3 { font-size: 1.15rem; }
   padding-bottom: .9rem;
   margin-bottom: 1.5rem;
 }
-.phase-head h3 { margin: 0; font-size: 1.15rem; }
+.phase-head h3, .phase-head h4 { margin: 0; font-size: 1.05rem; font-family: var(--font-head); }
 .phase-time {
   font-size: .72rem;
   letter-spacing: .06em;
